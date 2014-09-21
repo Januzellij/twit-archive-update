@@ -1,7 +1,7 @@
 twit-archive-update
 =
 
-twit-archive-update is a script to auto-update local Twitter archives with your newest tweets. Just `go get` the package, and run with your archive path as the first argument ("~"'s will automatically be replaced with your home directory).
+twit-archive-update is a script to update local Twitter archives with your newest tweets. With a bit of work, it could probably be run in a cron job to function as an auto updater. Just `go get` the package, and run with your archive path as the first argument ("~"'s will automatically be replaced with your home directory).
 
 ## Todo:
 * Cut down on the size of the JSON files

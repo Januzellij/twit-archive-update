@@ -329,15 +329,8 @@ func main() {
 		archiveCreated := parseArchiveCreated()
 		tweets := fetchNewTweets(archiveCreated)
 		fileMap := genFileMap(tweets)
-		// TODO:
-		// figure out why the JSON files get so much bigger (not enough omitempty?)
-		// get URL's to show up
-		// - HTML:
-		//<a class="link" href="http://t.co/krif9rR62a" target="_blank" title="http://twitter.com/Januzellij/status/504247052667084800/photo/1">
-		// pic.twitter.com/krif9rR62a</a>
-		// update user_details.js with any new user details
 		writeFileMap(fileMap)
-		//updateMetadata(len(tweets), fileMap)
+		updateMetadata(len(tweets), fileMap)
 	}
 	app.Run(os.Args)
 }
